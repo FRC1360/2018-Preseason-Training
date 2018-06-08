@@ -14,4 +14,12 @@ public class HumanInput {
     public static double getDriveThrottleRight() {
         return driver.getY(GenericHID.Hand.kRight);
     }
+
+    public static double getTriggerThrottle() {
+        return driver.getTriggerAxis(GenericHID.Hand.kRight) - driver.getTriggerAxis(GenericHID.Hand.kLeft);
+    }
+
+    public static double getTurn() {
+        return driver.getX(GenericHID.Hand.kLeft);
+    }
 }

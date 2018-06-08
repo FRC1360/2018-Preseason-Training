@@ -25,10 +25,10 @@ public class RobotOutput {
     }
 
     public void setDriveLeft(double left) {
-        driveLeft.set(left*0.25);
+        driveLeft.set(left*0.5);
     }
 
     public void setDriveRight(double right) {
-        driveRight.set(right*0.25);
+        driveRight.set(right*0.5);
     }
 }

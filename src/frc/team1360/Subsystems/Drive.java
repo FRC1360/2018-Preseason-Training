@@ -9,4 +9,9 @@ public class Drive {
         robotOutput.setDriveLeft(left);
         robotOutput.setDriveRight(right);
     }
+
+    public static void arcadeDrive(double throttle, double turn){
+        robotOutput.setDriveLeft(throttle-turn);
+        robotOutput.setDriveRight(throttle+turn);
+    }
 }

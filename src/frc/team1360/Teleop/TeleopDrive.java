@@ -1,4 +1,5 @@
 package frc.team1360.Teleop;
+
 import frc.team1360.IO.HumanInput;
 import frc.team1360.IO.RobotOutput;
 import frc.team1360.Robot;
@@ -10,7 +11,7 @@ public class TeleopDrive implements TeleopComponent {
 
     @Override
     public void update() {
-        Drive.tankDrive(robotOutput.deadzone(HumanInput.getDriveThrottleLeft()), robotOutput.deadzone(HumanInput.getDriveThrottleRight()));
+        Drive.arcadeDrive(robotOutput.deadzone(HumanInput.getTriggerThrottle()), robotOutput.deadzone(HumanInput.getTurn()));
     }
 
     @Override
