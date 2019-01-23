@@ -4,3 +4,7 @@ TeleopRobot.iml
 out/*
 dist/*
 build/*
+.classpath
+.project
+.gradle
+.settings
